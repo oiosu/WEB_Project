@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+     
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="bg-black text-white navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class=" navbar-brand" href="#">
+            <img src="./images/logo.png" alt="영화 추천사이트 로고" height="50px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="./02_home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./03_community.html">Community</a>
+              </li>
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-black text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title text-black" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label text-black">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label text-black">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input id="exampleCheck1">
+                                  <label class="form-check-label text-black" for="exampleCheck1">Check me out</label>
+                                </div>
+                              </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- main -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img width="1920" height="600" src="./images/photo-1548095115-45697e222a58.avif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img width="1920" height="600" src="./images/photo-1617914309185-9e63b3badfca.avif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img width="1920" height="600" src="./images/333.avif" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- box -->
+    <div class="box-text">
+        <h2 class="m-4 text-center text-black fw-bolder fs-3 box"> Boxoffice </h2>
+    </div>
+    <!-- poster -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 m-4">
+        <div class="p-3 col">
+          <div class="card h-100">
+            <img src="./images/movie1.jpg" class="card-img-top" alt="The Shawshank Redemption, 쇼생크 탈출 영화 포스터">
+            <div class="card-body">
+              <h5 class="text-center fw-bolder card-title">The Shawshank Redemption</h5>
+              <p class="text-center card-text">The Shawshank is a 1994 American bit of a film, featuring Stephen King's sequel to The St. A Ward and the Shank. Redbone director on the script supervises and supervises the director.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-3 col">
+          <div class="card h-100">
+            <img src="./images/movie2.jpg" class="card-img-top" alt="Dead Poets Society, 죽은 시인의 사회 영화 포스터">
+            <div class="card-body">
+              <h5 class="text-center fw-bolder card-title">Dead Poets Society</h5>
+              <p class="text-center card-text">It is an American drama film released in 1989. Directed by Peter Weir and starring Robin Williams. The film received critical acclaim and was a box office success.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-3 col">
+          <div class="card h-100">
+            <img src="./images/movie3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="text-center fw-bolder card-title">The Dark Knight Rises</h5>
+              <p class="text-center card-text">It is a superhero film directed and produced by Listopher Nolan. As the last film in Nolan's Batman series, it was released on July 19, 2012 in Korea and July 20, 2012 in the United States.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-3 col">
+            <div class="card h-100">
+              <img src="./images/movie4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-center fw-bolder card-title">The Grand Budapest Hotel</h5>
+                <p class="text-center card-text">It is a comedy drama film released in 2014. Directed by Wes Anderson, Anderson wrote the screenplay in collaboration with Hugo Guinness, inspired by a book by Stefan Zweig.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 col">
+            <div class="card h-100">
+              <img src="./images/movie5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-center fw-bolder card-title">Her</h5>
+                <p class="text-center card-text">86th Academy Awards Screenplay Award Winner / Best Picture, Music Award, Best Theme Song, Art Award</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 col">
+            <div class="card h-100">
+              <img src="./images/movie6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-center fw-bolder card-title">The Greatest Showman</h5>
+                <p class="text-center card-text">The Greatest Showman is a 2017 American musical biopic based on the real person P. T. Barnum. Directed by Michael Gracie, Hugh Jackman plays the main character, P.T. Barnum.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+<!-- footer -->
+    <div class="card text-center">
+        <div class="bg-black text-white card-header">Movie</div>
+            <div class="card-body">
+              <h5 class="card-title">Is there a movie you want to see?</h5>
+              <p class="card-text">Thank you for visiting our service. Find all the movies you want to see. </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+            <div class="card-footer text-muted"> </div>
+    </div>
+    
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>
